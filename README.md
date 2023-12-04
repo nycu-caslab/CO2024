@@ -36,12 +36,12 @@ Lab 5 Cache Simulator
 
 -----
 
-[Lab 0 Environment Setup & simple verilog practice](https://hackmd.io/8m-M6hv7Tj214ZiThI-e4A)
-[Lab 1 Single Cycle CPU w/ Simple RISC-V Instruction](https://hackmd.io/@kairesearch/H1LUmDA5h)
-[Lab 2 Single Cycle CPU w/ Branch Instruction](https://hackmd.io/@brianLiu45/rJo6iGw2h)
-[Lab 3 Pipelining CPU](https://hackmd.io/@kairesearch/HJVf2Gv33)
-[Lab 4 Data/Control Hazard](https://hackmd.io/@kairesearch/SJ4-5uo33/edit)
-[Lab 5 Implement Cache Simulator](/yDY5wPX4QNyQ02UcyZ2Vwg)
+- [Lab 0 Environment Setup & simple verilog practice](https://hackmd.io/8m-M6hv7Tj214ZiThI-e4A)
+- [Lab 1 Single Cycle CPU w/ Simple RISC-V Instruction](https://hackmd.io/@kairesearch/H1LUmDA5h)
+- [Lab 2 Single Cycle CPU w/ Branch Instruction](https://hackmd.io/@brianLiu45/rJo6iGw2h)
+- [Lab 3 Pipelining CPU](https://hackmd.io/@kairesearch/HJVf2Gv33)
+- [Lab 4 Data/Control Hazard](https://hackmd.io/@kairesearch/SJ4-5uo33/edit)
+- [Lab 5 Implement Cache Simulator](/yDY5wPX4QNyQ02UcyZ2Vwg)
 
 Lab1 4 week
 - Implement a simple cycle CPU
