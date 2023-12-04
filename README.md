@@ -40,7 +40,7 @@ Lab
 - [Lab 2 Single Cycle CPU w/ Branch Instruction](https://hackmd.io/@brianLiu45/rJo6iGw2h)
 - [Lab 3 Pipelining CPU](https://hackmd.io/@kairesearch/HJVf2Gv33)
 - [Lab 4 Data/Control Hazard](https://hackmd.io/@kairesearch/SJ4-5uo33/edit)
-- [Lab 5 Implement Cache Simulator](/yDY5wPX4QNyQ02UcyZ2Vwg)
+- [Lab 5 Implement Cache Simulator](https://hackmd.io/@brianLiu45/HkDDxarAh)
 
 Lab1 4 week
 - Implement a simple cycle CPU
