@@ -26,13 +26,12 @@ Computer Organization Course Syllabus
 
 
 Lab
-
-Lab 0 Environment setup (Ripes, Vivado)
-Lab 1 Implement a simple cycle CPU
-Lab 2 Implement R-type, I-type, and jump instruction
-Lab 3 Implement a simple version pipelined CPU
-Lab 4 Advanced pipelined CPU
-Lab 5 Cache Simulator
+- Lab 0 Environment setup (Ripes, Vivado)
+- Lab 1 Implement a simple cycle CPU
+- Lab 2 Implement R-type, I-type, and jump instruction
+- Lab 3 Implement a simple version pipelined CPU
+- Lab 4 Advanced pipelined CPU
+- Lab 5 Cache Simulator
 
 -----
 
