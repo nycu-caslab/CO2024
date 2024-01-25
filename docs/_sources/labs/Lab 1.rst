@@ -80,7 +80,7 @@ You can follow the architecture graph to realize a single cycle CPU.
 Instruction
 ~~~~~~~~~~~
 
-.. container:: info
+.. hint::
 
    All operation are signed
 
