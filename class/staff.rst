@@ -10,7 +10,12 @@ Instructor
 Teaching assistants
 *******************
 
-.. **Zhi-Duan Jiang**
+**Cheng-Hsi Liu**
 
-.. * m897420 [at] gmail.com
-.. * Location: EC120
+* brianliu.cs11 [at] nycu.edu.tw
+* Location: EC619
+
+**Kai-Chieh Hsu**
+
+* kaijhsu.cs12 [at] nycu.edu.tw
+* Location: EC619
