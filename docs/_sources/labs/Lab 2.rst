@@ -1,5 +1,5 @@
-Lab 2 Single Cycle CPU w/ Branch Instruction
-============================================
+Lab 2 : Single Cycle CPU w/ Branch Instruction
+==============================================
 
 Introduction
 ------------
@@ -17,11 +17,7 @@ original CPU support ``jal`` and ``jalr`` instructions.
 Lab Source Code
 ---------------
 
-For validation of your design of this lab, please use the new
-`SingleCycleCPU.v <https://github.com/nycu-caslab/CO2024_source/raw/main/lab2/SingleCycleCPU.v>`__
-to implement lab2.
-
-As for other modules, TAs think you should finish your lab2 based on
+TAs think you should finish your lab2 based on
 your lab1 submission, so there is no template after lab1.
 
 Single Cycle CPU

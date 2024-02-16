@@ -1,5 +1,5 @@
-Lab 3 Simple Pipeline CPU
-=========================
+Lab 3 : Simple Pipeline CPU
+===========================
 
 In Lab3, we will implement pipeline cpu. Don’t need to consider data
 hazard and control hazard for now.
