@@ -1,6 +1,16 @@
 Lab 0 : Environment Setup & simple verilog practice
 ===================================================
 
+Lab source code
+---------------
+
+TAs have prepared lab template for lab 0 and lab 1, however, you have to do lab2~4 based on previous lab, so remember to keep code clean and maintainable.
+
+.. code::
+
+   git clone https://github.com/nycu-caslab/CO2024_source.git
+
+
 Verilator
 ---------
 

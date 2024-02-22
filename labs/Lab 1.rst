@@ -1,5 +1,5 @@
-Lab 1 Single Cycle CPU w/ Simple RISC-V Instruction
-===================================================
+Lab 1 : Single Cycle CPU w/ Simple RISC-V Instruction
+=====================================================
 
 Introduction
 ------------
