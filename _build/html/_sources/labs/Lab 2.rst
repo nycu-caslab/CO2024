@@ -28,6 +28,7 @@ Architecture
 
 You can follow the architecture graph to realize a single cycle CPU,
 however, this architecture doesn’t consider jump related instructions.
+
 .. image:: images/singleArch.png
 
 Operation
@@ -69,8 +70,12 @@ Requirement
 -----------
 
 Implement your RISC-V single cycle CPU, your CPU should be able to
-support following RISC-V ISA - add, addi, sub, and, andi, or, ori - slt,
-slti - lw, sw, beq - jal, jalr, bne, blt, bge
+support following RISC-V ISA
+
+- add, addi, sub, and, andi, or, ori
+- slt, slti
+- lw, sw, beq
+- jal, jalr, bne, blt, bge
 
 TAs have prepare verilator testbench and some ``TEST_INSTRUCTION.txt``
 to grade your design. We will verify correctness by comparing register
@@ -93,6 +98,19 @@ value, so
    You must follow this ISA table to implement.
 
 .. image:: images/ISAtable.png
+
+Submission
+----------
+Please submit your source code as zip file to **E3**.
+
+The name of the zip file should be <student_id>.zip, and the structure of the file should
+be as the following:
+
+.. code::
+
+   <stduent_id>.zip
+      |- <student_id>/
+         |- ...(your source codes)
 
 Hint
 ----

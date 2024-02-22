@@ -18,9 +18,17 @@ Lab source code
 
 TAs have prepare
 `template <https://github.com/nycu-caslab/CO2024_source/tree/main/lab1>`__,
-you can follow the template or modify as you wish. However, the there
-are somethings you shouln’t change. - Register - Instruction Memory -
-Data Memory - CPU I/O interface and register instance name
+you can follow the template or modify as you wish. However, the there are
+somethings you shouln't change. By the way, remember to write clean and
+maintainable code, you need to reuse your lab1 code in future labs.
+
+- Register
+- Instruction Memory
+- Data Memory
+- CPU I/O interface and register instance name
+
+In source code, we will provide simple instruction ``TEST_INSTRUCTIONS.txt`` and
+this michine code is generated from ``TEST_INSTRUCTIONS.asm``.
 
 .. warning::
 
@@ -37,7 +45,6 @@ instruction set architecture. Please read the document via hyperlink.
 .. figure:: images/ripes.png
    :alt: Ripes
 
-   
 
 As the picture above, you can write you own assembly code then clock the
 processor, then check the right register values.
@@ -46,6 +53,7 @@ You can copy generated machine code to ``TEST_INSTRUCTIONS.txt`` in the
 following format to run your code on your CPU design. Each line in file
 has 8 bits, a 4 bytes instruction represented by 4 lines. The file
 should end with a new empty line.
+
 
 ::
 
@@ -75,6 +83,7 @@ Architecture
 ~~~~~~~~~~~~
 
 You can follow the architecture graph to realize a single cycle CPU.
+
 .. image:: images/singleArch.png
 
 Instruction
@@ -159,8 +168,11 @@ Requirement
 -----------
 
 Implement your RISC-V single cycle CPU, your CPU should be able to
-support following RISC-V ISA - add, addi, sub, and, andi, or, ori - slt,
-slti - lw, sw, beq
+support following RISC-V ISA
+
+- add, addi, sub, and, andi, or, ori
+- slt, slti
+- lw, sw, beq
 
 TAs have prepare verilator testbench and some ``TEST_INSTRUCTION.txt``
 to grade your design. We will verify correctness by comparing register
@@ -174,6 +186,19 @@ value, so
 
    Reset signal ``rst`` should be active low. 
 
+
+Submission
+----------
+Please submit your source code as zip file to **E3**.
+
+The name of the zip file should be <student_id>.zip, and the structure of the file should
+be as the following:
+
+.. code::
+
+   <stduent_id>.zip
+      |- <student_id>/
+         |- ...(your source codes)
 
 Hint
 ----
