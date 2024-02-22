@@ -15,6 +15,11 @@ Teaching assistants
 * kaijhsu.cs12 [at] nycu.edu.tw
 * Location: EC619
 
+**Yu-Lun Ning**
+
+* en.cs10 [at] nycu.edu.tw
+* Location: EC619
+
 **Cheng-Hsi Liu**
 
 * brianliu.cs11 [at] nycu.edu.tw
