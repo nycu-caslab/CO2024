@@ -64,7 +64,9 @@ Installation
 Full Adder & ALU
 ----------------
 
-`Report <https://hackmd.io/yqWJmbX_SfOnYJNLvbjx5Q>`__ ### 1. Full Adder
+1. Full Adder
+~~~~~~~~~~~~~
+
 Based on the circuit of the following adder, complete the circuit using
 Verilog, and create a testbench using Verilator to verify the circuit.
 
@@ -81,10 +83,10 @@ circuit.
 
    // file name : alu.v
    // You shouldn't change interface naming; otherwise, your lab0 will receive 0 points.
-   module alu(input signed [3:0] a,
-              input signed [3:0] b,
+   module alu(input [3:0] a,
+              input [3:0] b,
               input [2:0] s,
-              output reg signed [3:0] y);
+              output reg [3:0] y);
 
    // implement your module here
 
@@ -97,7 +99,7 @@ circuit.
 
 .. warning::
 
-   All operations are **signed** arithmetic.
+   All operations are **unsigned** arithmetic.
 
 .. image:: images/ALU.png
 
