@@ -1,6 +1,10 @@
 Lab 0 : Environment Setup & simple verilog practice
 ===================================================
 
+.. Important::
+   You do not need to submit Lab 0; however, we strongly recommend that you ensure you have completed every step of the environment setup for Lab 0 before proceeding with subsequent assignments.
+
+
 Lab source code
 ---------------
 
@@ -9,6 +13,16 @@ TAs have prepared lab template for lab 0 and lab 1, however, you have to do lab2
 .. code::
 
    git clone https://github.com/nycu-caslab/CO2024_source.git
+
+Development Tools Introduction:
+-------------------------------
+
+In subsequent labs, we will make extensive use of tools like Verilator and GTKWave, along with concepts of testbenches and patterns. Below is the development flowchart for the upcoming sessions.
+
+.. image:: images/FLOW.png
+
+
+"YourVerilogFile.v" will be the assignment you have completed, commonly referred to as the DUT (Device Under Test). We will place it alongside a pattern (testcase) on a testbench for testing, and use the Verilator for simulation and verification, eventually generating a waveform file "waveform.vcd"(for example). If your module fails the testbench verification, you can use GTKWave to open the waveform file for debugging, trace the error, and make the necessary changes.
 
 
 Verilator
@@ -61,6 +75,8 @@ Installation
    that you can locate. Follow the steps in the example to learn how to
    use it.
 
+
+
 Full Adder & ALU
 ----------------
 
@@ -82,8 +98,7 @@ circuit.
 .. code:: verilog
 
    // file name : alu.v
-   // You shouldn't change interface naming; otherwise, your lab0 will receive 0 points.
-   module alu(input [3:0] a,
+      module alu(input [3:0] a,
               input [3:0] b,
               input [2:0] s,
               output reg [3:0] y);
@@ -91,6 +106,8 @@ circuit.
    // implement your module here
 
    endmodule
+
+.. image:: images/ALU.png
 
 .. warning::
 
@@ -101,7 +118,12 @@ circuit.
 
    All operations are **unsigned** arithmetic.
 
-.. image:: images/ALU.png
+.. warning::
+   To showcase one of Verilator's functionalities, the testbench we provided for lab 0 contains assertion. If you encounter an assertion error and the testbench does not generate a waveform, you can comment out the assert() statement and get the waveform, but make sure to un-comment it when doing verification.
+
+
+After implementing the above two circuits, use the "make" command to run the testbench and check if your design passes correctly!
+
 
 --------------
 
@@ -113,7 +135,7 @@ GTKwave
 
 https://gtkwave.sourceforge.net/
 
-Verilator support waveform tracing, enable waveform tracing through add
+Verilator supports waveform tracing, enable waveform tracing through add
 code in **testbench (cpp file)** and compile add **flag –trace**
 
 Using GTKwave to open **.vcd** file to check the waveform
@@ -134,4 +156,4 @@ Reference
 ---------
 
 -  `verilator用法 <https://itsembedded.com/dhd/verilator_1/>`__
--  `verilog toturial <https://hdlbits.01xz.net/wiki/Problem_sets#Verilog_Language>`__
+-  `verilog tutorial <https://hdlbits.01xz.net/wiki/Problem_sets#Verilog_Language>`__

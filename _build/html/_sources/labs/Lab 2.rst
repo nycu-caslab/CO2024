@@ -112,6 +112,11 @@ be as the following:
       |- <student_id>/
          |- ...(your source codes)
 
+.. warning::
+
+   The deadline is on 4/11 23:59.
+
+
 Hint
 ----
 
