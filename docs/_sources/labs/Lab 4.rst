@@ -1,5 +1,5 @@
-Lab4 Advance Pipeline CPU
-=========================
+Lab 4 : Advance Pipeline CPU
+============================
 
 Introduction
 ------------

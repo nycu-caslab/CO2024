@@ -1,5 +1,5 @@
-Lab 3 Simple Pipeline CPU
-=========================
+Lab 3 : Simple Pipeline CPU
+===========================
 
 Introduction
 ------------
