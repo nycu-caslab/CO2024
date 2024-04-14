@@ -1,48 +1,105 @@
-Lab 4 : Advance Pipeline CPU
-============================
+Lab4 Advance Pipeline CPU
+=========================
+
+Introduction
+------------
+
+We have pipelined our CPU to improve performance. However, there are
+three significant issues that stay unsolved. They are branches,
+load-use, and write-use hazards. In this lab, you are requested to
+implement hazard detection and forwarding units.
+
+Lab Source Code
+---------------
+
+As for other modules, TAs think you should finish lab4 based on your
+lab3 submission, so there is no template.
+
+Pipeline Cycle CPU (with hazard & forwarding)
+=============================================
 
 Architecture
 ------------
 
-.. image:: https://hackmd.io/_uploads/S1na9_i23.png
+.. figure:: images/pipeline_hazard_forwarding.png
 
-Instruction
------------
+Hazard Dectection Unit
+----------------------
 
-==== ==== === ====
-add  or   sw  jal
-addi ori  beq jalr
-sub  slt  blt 
-and  slti bne 
-andi lw   bgt 
-==== ==== === ====
+The hazard detection unit is responsible for inserting a nop when
+load-use data hazard happens (as the following snippet)
 
-Requirement
------------
+.. code :: c
+
+   ld x1 0(sp);
+   ; insert nop here 
+   add x1 x1 x2;
+
+Also, flush the pipeline register after branch instruction once the
+branch is taken. - If you follow the architecture provided above - You
+must determine if the branch will take or not in the ID stage.
 
 Forwarding Unit
-~~~~~~~~~~~~~~~
+---------------
 
-Forwarding Unit deals with write-use data hazard, for example, your
-design should handle the following case.
+The forwarding unit deals with write-use data hazards; your design
+should handle the following case.
 
-.. code::
+.. code :: c
 
    add x1, x1, x2
    add x1, x1, x3
    add x1, x1, x4
 
-Hazard Dectection Unit
-~~~~~~~~~~~~~~~~~~~~~~
+Instruction
+-----------
 
-Your hazard dectection unit should insert a nop when load-use data
-hazard happens
+Your CPU should be able to support the following RISC-V ISA.
 
-.. code::
+- add, addi, sub, and, andi, or, ori
+- slt, slti
+- lw, sw, beq
+- jal, jalr, bne, blt, bge
 
-   ld x1 0(sp)
-   add x1 x1 x2
+Requirement
+-----------
 
-Also, flush pipeline register after branch instruction once branch is
-taken. - If you follow the architecture provided above - You must
-determine if branch will take or not in ID stage.
+Implement hazard detection and forwarding units, then integrate them
+into your CPU. You are recommended to write the assembly yourself to
+test your design’s correctness.
+
+TAs have prepared hidden test cases to grade your design. We will verify
+correctness by comparing register values. Your design should also be
+able to satisfy previous (lab1~3) requirements.
+
+Submission
+----------
+
+Please submit your source code as a zip file to **E3**.
+
+The name of the zip file should be .zip, and the structure of the file
+should be as the following:
+
+::
+
+   <stduent_id>.zip
+       |- <student_id>/
+           |- ...(your source codes)
+
+Hint
+----
+
+-  Read the textbook first and understand each submodule’s
+   functionality.
+-  Debugging with waveform makes your life easier.
+-  Try to generate your risc-v machine code with Ripe; you can write a
+   simple assembly to verify if your code runs as expected.
+
+Reference
+---------
+
+Computer Organization and Design RISC-V Edition, CH4
+`Ripes <https://github.com/mortbopet/Ripes>`__ `RISC-V
+Reader <http://riscvbook.com/>`__
+`riscv-isa-pages <https://msyksphinz-self.github.io/riscv-isadoc/html/rvi.html>`__
+\``\`
