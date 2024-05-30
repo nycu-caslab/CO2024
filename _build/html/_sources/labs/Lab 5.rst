@@ -114,6 +114,28 @@ simple test case
    You can use Python to program the pattern generator to
    generate the test case to verify your Cache Manager
 
+Template
+---------
+TAs have implement a direct-mapped version of cache, please [clone](https://github.com/nycu-caslab/CO2024_source) to get template.
+
+Requirement
+-----------
+You can only modify `CacheManager.cpp` and `CacheManager.h`. For all who submit this lab, you will get 80 points if your miss counts is better than template, for the remained 20 points are based on the median miss counts of all submission.
+
+Submit zip file with the following format.
+
+::
+
+   <stduent_id>.zip
+      |- <student_id>/
+         |- CacheManager.cpp
+         |- CacheManager.h
+         |- (don't zip other files)
+
+
+
+
+
 Reference
 ---------
 
